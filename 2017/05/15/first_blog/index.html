@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="建网站 hexo node 极客," />
 
 
 
@@ -87,15 +87,19 @@
 
 
 
-<meta name="description" content="拥抱变化，come on!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="jesseband">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="如何开始之前看到过很多github pages搞出来的个人网站，还不需要申请域名，就也想自己来搞搞，又了解到除了wordpress之外还有个node写的博客发布程序，就心痒痒，想试试，就开始搞起了hexo 第一步准备先去github上面建个仓库，new repository名字必须的 你的用户名.github.io 这样的方式 比如 jesseband.github.io其他都默认，然后创建即可">
+<meta name="keywords" content="建网站 hexo node 极客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用hexo搭建网站以及配置发布">
+<meta property="og:url" content="http://yoursite.com/2017/05/15/first_blog/index.html">
 <meta property="og:site_name" content="jesseband">
-<meta property="og:description" content="拥抱变化，come on!">
+<meta property="og:description" content="如何开始之前看到过很多github pages搞出来的个人网站，还不需要申请域名，就也想自己来搞搞，又了解到除了wordpress之外还有个node写的博客发布程序，就心痒痒，想试试，就开始搞起了hexo 第一步准备先去github上面建个仓库，new repository名字必须的 你的用户名.github.io 这样的方式 比如 jesseband.github.io其他都默认，然后创建即可">
+<meta property="og:image" content="http://yoursite.com/images/new.png">
+<meta property="og:updated_time" content="2017-05-15T09:21:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jesseband">
-<meta name="twitter:description" content="拥抱变化，come on!">
+<meta name="twitter:title" content="用hexo搭建网站以及配置发布">
+<meta name="twitter:description" content="如何开始之前看到过很多github pages搞出来的个人网站，还不需要申请域名，就也想自己来搞搞，又了解到除了wordpress之外还有个node写的博客发布程序，就心痒痒，想试试，就开始搞起了hexo 第一步准备先去github上面建个仓库，new repository名字必须的 你的用户名.github.io 这样的方式 比如 jesseband.github.io其他都默认，然后创建即可">
+<meta name="twitter:image" content="http://yoursite.com/images/new.png">
 
 
 
@@ -123,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/15/first_blog/"/>
 
 
 
 
 
-  <title> jesseband </title>
+  <title> 用hexo搭建网站以及配置发布 | jesseband </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,9 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +241,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,10 +273,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/05/15/first_blog/" itemprop="url">
-                  用hexo搭建网站以及配置发布
-                </a>
+                用hexo搭建网站以及配置发布
               
             
           </h1>
@@ -325,9 +324,7 @@
       
 
       
-        
-          
-            <h2 id="如何开始"><a href="#如何开始" class="headerlink" title="如何开始"></a>如何开始</h2><p>之前看到过很多github pages搞出来的个人网站，还不需要申请域名，就也想自己来搞搞，又了解到除了wordpress之外还有个node写的博客发布程序，就心痒痒，想试试，就开始搞起了hexo</p>
+        <h2 id="如何开始"><a href="#如何开始" class="headerlink" title="如何开始"></a>如何开始</h2><p>之前看到过很多github pages搞出来的个人网站，还不需要申请域名，就也想自己来搞搞，又了解到除了wordpress之外还有个node写的博客发布程序，就心痒痒，想试试，就开始搞起了hexo</p>
 <h2 id="第一步准备"><a href="#第一步准备" class="headerlink" title="第一步准备"></a>第一步准备</h2><p>先去github上面建个仓库，new repository<br><img src="/images/new.png" alt="新建仓库"><br>名字必须的 你的用户名.github.io 这样的方式 比如 jesseband.github.io<br>其他都默认，然后创建即可</p>
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p><code>sudo npm install -g hexo-cli</code><br>hexo-cli 是hexo的命令行模块<br>新建个项目目录，执行hexo init命令<br>hexo new name<br>然后在source目录下边_posts里面会有个name.md文件，在这里吗就可以直接写你的博客了，当然是可以用markdown语法来写了<br>hexo generate 执行这个命令生成静态文件<br>本地是可以预览效果的 hexo server -p 4000 默认是4000端口，也可以自定义修改</p>
 <h2 id="配置发布"><a href="#配置发布" class="headerlink" title="配置发布"></a>配置发布</h2><p>在根目录下面，就是执行init的目录下边会有个_config.yml文件，这个就是配置文件<br>在最下边找到deploy 的配置行<br>这样配置</p>
@@ -337,42 +334,56 @@
 <p>以上就是我简单用hexo搭网站的简单总结和记录，更复杂的hexo功能还有待去开发。</p>
 <h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo官网</a><br><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">hexo+github</a><br><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">hexo主题</a><br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">markdown语法</a></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/建网站-hexo-node-极客/" rel="tag"># 建网站 hexo node 极客</a>
+          
+        </div>
+      
+
+      
+        
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -380,6 +391,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -399,8 +414,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -453,6 +477,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何开始"><span class="nav-number">1.</span> <span class="nav-text">如何开始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步准备"><span class="nav-number">2.</span> <span class="nav-text">第一步准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置发布"><span class="nav-number">4.</span> <span class="nav-text">配置发布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo主题"><span class="nav-number">5.</span> <span class="nav-text">hexo主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接："><span class="nav-number">6.</span> <span class="nav-text">参考链接：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -560,6 +600,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
